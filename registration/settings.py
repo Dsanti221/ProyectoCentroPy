@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'registration.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'basecentro',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'centrobd',
+        'USER': 'santiagoadmin',
+        'PASSWORD': 'David20022',
+        'HOST': 'basededatoscentrosv.mysql.database.azure.com',
         'PORT': '3306',
     }
 }
