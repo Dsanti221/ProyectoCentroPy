@@ -82,6 +82,9 @@ DATABASES = {
         'PASSWORD': 'David20022',
         'HOST': 'basededatoscentrosv.mysql.database.azure.com',
         'PORT': '3306',
+        'OPTIONS': {
+            'ssl': {'ca': 'ssl/BaltimoreCyberTrustRoot.crt.pem'}
+        }
     }
 }
 
