@@ -74,20 +74,31 @@ WSGI_APPLICATION = 'registration.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'sql_server.pyodbc',
+#        'NAME': 'ultimointento',
+#        'USER': 'santiagoadmin',
+#        'PASSWORD': 'David2002.',
+#        'HOST': 'servidorappsirve.database.windows.net',
+#        'PORT': '1433',
+#        'OPTIONS': {
+#           'driver': 'ODBC Driver 13 for SQL Server',
+#        }
+#   }
+#}
+#DATABASE_CONNECTION_POOLING = False
+
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'ultimointento',
-        'USER': 'santiagoadmin',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'finalfinal',
+        'USER': 'santiadmin',
         'PASSWORD': 'David2002.',
-        'HOST': 'servidorappsirve.database.windows.net',
-        'PORT': '1433',
-        'OPTIONS': {
-           'driver': 'ODBC Driver 13 for SQL Server',
-        }
+        'HOST': 'svrmserver.postgres.database.azure.com',
+        'PORT': '5432'
     }
 }
-DATABASE_CONNECTION_POOLING = False
 
 
 #DATABASES = {
@@ -126,7 +137,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Bogota'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
