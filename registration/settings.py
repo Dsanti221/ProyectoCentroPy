@@ -76,17 +76,30 @@ WSGI_APPLICATION = 'registration.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'centrobd',
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'ultimointento',
         'USER': 'santiagoadmin',
-        'PASSWORD': 'David20022',
-        'HOST': 'basededatoscentrosv.mysql.database.azure.com',
-        'PORT': '3306',
+        'PASSWORD': 'David2002.',
+        'HOST': 'servidorappsirve.database.windows.net',
+        'PORT': '1433',
         'OPTIONS': {
-            'ssl': {'ca': 'ssl/BaltimoreCyberTrustRoot.crt.pem'}
+           'driver': 'ODBC Driver 13 for SQL Server',
         }
     }
 }
+DATABASE_CONNECTION_POOLING = False
+
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'basecentro',
+#        'USER': 'root',
+#        'PASSWORD': '',
+#        'HOST': 'localhost',
+#        'PORT': '3306',
+#    }
+#}
 
 
 # Password validation
