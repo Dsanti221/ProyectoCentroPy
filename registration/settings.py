@@ -92,10 +92,10 @@ WSGI_APPLICATION = 'registration.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'finalfinal',
+        'NAME': 'finalpago',
         'USER': 'santiadmin',
         'PASSWORD': 'David2002.',
-        'HOST': 'svrmserver.postgres.database.azure.com',
+        'HOST': 'bsfinalpago.postgres.database.azure.com',
         'PORT': '5432'
     }
 }
